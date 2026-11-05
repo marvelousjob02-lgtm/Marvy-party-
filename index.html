@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MARVY PARTY</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #100b20;
+  color: white;
+}
+
+header {
+  background: #241044;
+  padding: 22px;
+  text-align: center;
+  border-bottom: 2px solid gold;
+}
+
+header h1 {
+  color: gold;
+  margin: 0;
+  font-size: 28px;
+}
+
+header p {
+  margin-bottom: 0;
+  color: #ddd;
+}
+
+.container {
+  padding: 20px;
+}
+
+.welcome {
+  text-align: center;
+  padding: 25px 10px;
+}
+
+.welcome h2 {
+  color: gold;
+}
+
+button {
+  background: gold;
+  color: #170c28;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.card {
+  background: #241a38;
+  padding: 18px;
+  margin: 15px 0;
+  border-radius: 15px;
+  border: 1px solid #60418a;
+}
+
+.card h3 {
+  color: gold;
+}
+
+input {
+  width: 100%;
+  padding: 13px;
+  margin: 8px 0;
+  border-radius: 8px;
+  border: none;
+}
+
+nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #241044;
+  display: flex;
+  justify-content: space-around;
+  padding: 15px 3px;
+}
+
+nav a {
+  color: gold;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+footer {
+  text-align: center;
+  padding: 30px 10px 90px;
+  color: #aaa;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>MARVY PARTY</h1>
+  <p>Connect • Chat • Party • Enjoy</p>
+</header>
+
+<div class="container">
+
+<section class="welcome">
+  <h2>WELCOME TO MARVY PARTY</h2>
+  <p>Your world of entertainment, friendship and amazing parties.</p>
+  <button onclick="showRegister()">Join MARVY PARTY</button>
+</section>
+
+<div class="card" id="register">
+  <h3>Create Your Account</h3>
+  <input type="text" placeholder="Enter your username">
+  <input type="email" placeholder="Enter your email">
+  <input type="password" placeholder="Create password">
+  <button onclick="alert('Registration demo! Account system coming soon.')">
+    Register
+  </button>
+</div>
+
+<div class="card">
+  <h3>🎤 Audio Party Rooms</h3>
+  <p>Meet new friends and enjoy exciting conversations.</p>
+  <button onclick="alert('Audio rooms coming soon!')">Explore Rooms</button>
+</div>
+
+<div class="card">
+  <h3>🎮 Games Center</h3>
+  <p>Discover exciting games and entertainment.</p>
+  <button onclick="alert('Games coming soon!')">Explore Games</button>
+</div>
+
+<div class="card">
+  <h3>🎁 Gifts & Rewards</h3>
+  <p>Send virtual gifts and celebrate with friends.</p>
+  <button onclick="alert('Gift center coming soon!')">Explore Gifts</button>
+</div>
+
+<div class="card">
+  <h3>👤 My Profile</h3>
+  <p>Manage your personal profile and account.</p>
+  <button onclick="alert('Profile system coming soon!')">My Profile</button>
+</div>
+
+</div>
+
+<footer>
+  <p>MARVY PARTY © 2026</p>
+  <p>Created with ❤️ by MARVELOUS OFFICIAL</p>
+</footer>
+
+<nav>
+  <a href="#">🏠 Home</a>
+  <a href="#register">👤 Register</a>
+  <a href="#">🎤 Rooms</a>
+  <a href="#">🎮 Games</a>
+</nav>
+
+<script>
+function showRegister() {
+  document.getElementById("register").scrollIntoView({
+    behavior: "smooth"
+  });
+}
+</script>
+
+</body>
+    </html>
